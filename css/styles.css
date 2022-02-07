@@ -70,6 +70,14 @@ div[class$="test"]{
 a[href*="https"][href$="com"]{
     background-color: beige;
 }
+div.box{
+    float: left;
+    width: 49.48%;
+    height: 100%;
+    background-color: peachpuff;
+    border-style: solid;
+    border-radius: 10px;
+}
 /* tüm etiketlere bu css utgulanır*//*
 *{
     margin: 0;
