@@ -1,0 +1,78 @@
+/******************İlk Çalışma******************/
+/*class-> .text-red{}*/
+/*id-> #id-bilgisi{}*/
+/*
+h1,h2,h3,h4,h5,h6{
+    color: black;
+}
+h1{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+*/
+#first-article{
+    font-size: 40px;
+}
+.text-red{
+    color: red;
+}
+/*li:first-child{
+    color:red;
+}
+li:last-child{
+    color: blue;
+}
+li:nth-child(odd){
+    color: yellow;
+}
+li:nth-child(even){
+    color: green;
+}
+li:nth-child(3n){
+    color: pink;
+}*/
+p.mavi{/*sınıf ismi mavi olan p elementlerine eriştik*/ 
+    color:blue;
+}
+/*Özellik Seçiciler (Attribute Selectors)
+
+    Bu seçiciler ile özelliğini belirttiğimiz elementlere CSS uygulayabiliriz. Özelliğin içi boş olsada element bundan etkilenecektir. Özelliklere erişmek için yapmamız gereken tek şey köşeli parantezler içinde özelliğin ismini [attribute] şeklinde yazıyoruz*/
+[name]{
+    color:orange;
+}
+/*Burada sınıfı .btn ve niteliği(attribute) [disabled] olan butona CSS uyguladık.*/
+.btn[disabled]{
+    background-color: brown;
+}
+/*Burada tam eşleşen özelliğe CSS uyguladık. Büyük-küçük harf duyarlılığı vardır.*/
+div[title=deneme]{
+    background-color: aqua;
+}
+/*Burada ~= ifadesi ile title özelliği "isim" içeren divlere eriştik.*/
+div[title~=isim]{
+    background-color: chocolate;
+}
+/*Burada ^= ifadesi ile href özelliği "https" ile başlayan a etiketlerine eriştik.*/
+a[href^="https"]{
+    color: lawngreen;
+}
+/*Burada *= ifadesi ile href özelliği "http" içeren a etiketlerine eriştik.*/
+a[href*="https"]{
+    font-family: monospace;
+}
+/*Burada $= ifadesi ile class özelliği sonunda "test" içeren divlere eriştik.*/
+div[class$="test"]{
+    background-color: blue;
+}
+/*Burada https ile başlayan ve sonunda com olan a etiketlerine eriştik.*/
+a[href*="https"][href$="com"]{
+    background-color: beige;
+}
+/* tüm etiketlere bu css utgulanır*//*
+*{
+    margin: 0;
+    padding: 0;
+}
+*/
